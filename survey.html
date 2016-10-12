@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <div class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </div>
+
+    <header>
+    </header>
+
+    <main>
+      <h4>Survey</h4>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt= "Photo of the concert">
+          <div class="container">
+            <form class = "survey">
+              <fieldset>
+              <legend>Who is your favorite band member:</legend>
+              <label class="favMember" for="john">John</label><input id="john"type="radio" name="res" value="John">
+              <label class="favMember" for="hazzard">Hazzard</label><input id="hazzard" type="radio" name="res" value="Hazzard">
+              <label class="favMember" for="bob">Bob</label><input id="bob" type="radio" name="res" value="Bob">
+              <label class="favMember" for="sally">Sally</label><input id="sally" type="radio" name="res" value="Sally">
+              </fieldset>
+              
+              <fieldset>
+              <legend>What is your favorite album:</legend>
+              <input type="text" list = "albums">
+              <datalist id = "albums">
+                <select id="albums" name="select">
+                <option value="A Day Of Old"></option>  
+                <option value="Diamond Fireworks"></option>
+                <option value="Party For An Angel"></option>
+                <option value="Enjoy Your Desire"></option>
+                <option value="Finding My Shadow"></option>
+                <option value="Heroic Forever"></option>
+                <option value="Midnight Fires"></option>
+                <option value="Music Of My Life"></option>
+                <option value="Song For Yesterday"></option>
+                <option value="Street Of The Rider"></option>
+                <option value="This Is For You"></option>  
+                </select>
+              </datalist>    
+              <fieldset>
+              <legend>What is your favorite song:</legend>
+              <textarea id="favSong"></textarea>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h4>Newsletter</h4>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="photo of the band in concert ">
+            <div class="container">
+              <form class="newsletter">
+                <fieldset>
+                  <legend>Newsletter</legend>
+                  <label class="signUp"for="name">Name: </label><input id="name"type ="text" name="textfield">
+                  <label class="signUp" for="email">Email: </label><input id="email" type ="email" name="textfield"></p>
+                  <label class="signUp" for="retypeEmail">Retype Email: </label><input id="retypeEmail" type ="email" name="textfield"></p>
+                  <button type="submit">Sign Up</button>
+              </fieldset>
+              </form>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="social twitter"></a></li>
+        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="social youtube"></a></li>
+        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="social spotify"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+<script src ="dataList.js" type="text/javascript"></script>
+  </body>
+</html>

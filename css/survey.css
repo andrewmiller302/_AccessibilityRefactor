@@ -1,0 +1,74 @@
+/* Survey page styles */
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: right;
+
+}
+
+/* Form Styles */
+
+fieldset{
+  border: 0;
+  text-align: left;
+  padding-left: 0;
+}
+legend{
+  padding: 0;
+  text-align: left;
+}
+
+input{
+  margin-bottom: 15px;
+}
+input:focus{
+  background-color: lightblue;
+  
+}
+
+textarea:focus{
+  background-color: lightblue;
+}
+
+label{
+  margin: 10px 0px 5px;
+}
+
+.favMember{
+  padding-right: 4px;
+}
+
+label{
+  display: block;
+}
+.favMember{
+  display: inline;
+}
+
+.signUp{
+  text-align: left;
+  
+}
+
+
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+}
