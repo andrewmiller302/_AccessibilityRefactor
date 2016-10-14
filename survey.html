@@ -18,7 +18,11 @@
       </ul>
     </div>
 
-    <header>
+    <header class="flexItem">
+      
+        <h1>Accessible Frog</h1>
+        <h2>we make awesome music</h2>
+      
     </header>
 
     <main>
@@ -29,8 +33,8 @@
           <div class="container">
             <form class = "survey">
               <fieldset>
-              <legend>Who is your favorite band member:</legend>
-              <label class="favMember" for="john">John</label><input id="john"type="radio" name="res" value="John">
+              <legend class = "favHead">Who is your favorite band member:</legend>
+              <label class="favMember" for="john">John</label><input id="john" type="radio" name="res" value="John">
               <label class="favMember" for="hazzard">Hazzard</label><input id="hazzard" type="radio" name="res" value="Hazzard">
               <label class="favMember" for="bob">Bob</label><input id="bob" type="radio" name="res" value="Bob">
               <label class="favMember" for="sally">Sally</label><input id="sally" type="radio" name="res" value="Sally">
@@ -38,24 +42,24 @@
               
               <fieldset>
               <legend>What is your favorite album:</legend>
-              <input type="text" list = "albums">
-              <datalist id = "albums">
+              <label for="albums">What is your favorite album:</label>
                 <select id="albums" name="select">
-                <option value="A Day Of Old"></option>  
-                <option value="Diamond Fireworks"></option>
-                <option value="Party For An Angel"></option>
-                <option value="Enjoy Your Desire"></option>
-                <option value="Finding My Shadow"></option>
-                <option value="Heroic Forever"></option>
-                <option value="Midnight Fires"></option>
-                <option value="Music Of My Life"></option>
-                <option value="Song For Yesterday"></option>
-                <option value="Street Of The Rider"></option>
-                <option value="This Is For You"></option>  
+                <option value="1">A Day Of Old</option>  
+                <option value="2">Diamond Fireworks</option>
+                <option value="3">Enjoy Your Desire</option>
+                <option value="4">Finding My Shadow</option>
+                <option value="5">Heroic Forever</option>
+                <option value="6">Midnight Fires</option>
+                <option value="7">Music Of My Life</option>
+                <option value="8">Party For An Angel</option>
+                <option value="9">Song For Yesterday</option>
+                <option value="10">Street Of The Rider</option>
+                <option value="11">This Is For You</option>  
                 </select>
-              </datalist>    
+              </fieldset>
               <fieldset>
               <legend>What is your favorite song:</legend>
+              <label for="favSong">What is your favorite song:</label>
               <textarea id="favSong"></textarea>
               </fieldset>
             </form>
@@ -70,9 +74,9 @@
               <form class="newsletter">
                 <fieldset>
                   <legend>Newsletter</legend>
-                  <label class="signUp"for="name">Name: </label><input id="name"type ="text" name="textfield">
-                  <label class="signUp" for="email">Email: </label><input id="email" type ="email" name="textfield"></p>
-                  <label class="signUp" for="retypeEmail">Retype Email: </label><input id="retypeEmail" type ="email" name="textfield"></p>
+                  <label class="signUp" for="name">Name: </label><input id="name" type ="text" name="textfield">
+                  <label class="signUp" for="email">Email: </label><input id="email" type ="email" name="textfield">
+                  <label class="signUp" for="retypeEmail">Retype Email: </label><input id="retypeEmail" type="email" name="textfield">
                   <button type="submit">Sign Up</button>
               </fieldset>
               </form>
